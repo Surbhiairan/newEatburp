@@ -1,0 +1,301 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react2 = require('react');
+
+var _react3 = _interopRequireDefault(_react2);
+
+var _index = require('./node_modules/react-transform-hmr/lib/index.js');
+
+var _index2 = _interopRequireDefault(_index);
+
+var _jsxFileName = '/home/anjali/newEatburp/App.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _reactNative = require('react-native');
+
+var _SearchBar = require('./components/SearchBar');
+
+var _SearchBar2 = _interopRequireDefault(_SearchBar);
+
+var _HomeScreenBubble = require('./components/HomeScreenBubble');
+
+var _HomeScreenBubble2 = _interopRequireDefault(_HomeScreenBubble);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _components = {
+  App: {
+    displayName: 'App'
+  }
+};
+
+var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+  filename: '/home/anjali/newEatburp/App.js',
+  components: _components,
+  locals: [module],
+  imports: [_react3.default]
+});
+
+function _wrapComponent(id) {
+  return function (Component) {
+    return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+  };
+}
+
+var App = _wrapComponent('App')(function (_React$Component) {
+  _inherits(App, _React$Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  }
+
+  _createClass(App, [{
+    key: '_handlePress',
+    value: function _handlePress() {
+      console.log('search pressed');
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react3.default.createElement(
+        _reactNative.ImageBackground,
+        {
+          source: require('./BG.jpg'),
+          style: styles.backgroundImage, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          }
+        },
+        _react3.default.createElement(_SearchBar2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        }),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubbleCitySpecial, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./cutlery.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 23
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubbleSurpriseMe, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 29
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./van.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubbleLatest, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 36
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./pizza.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubbleDrinks, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 43
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./ice-cream.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 44
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubbleBeverages, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 50
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./noodles.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 51
+            }
+          })
+        ),
+        _react3.default.createElement(
+          _reactNative.TouchableOpacity,
+          { style: styles.bubblePocketFriendly, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 57
+            }
+          },
+          _react3.default.createElement(_reactNative.Image, {
+            style: styles.image,
+            source: require('./coffee.png'),
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 58
+            }
+          })
+        )
+      );
+    }
+  }]);
+
+  return App;
+}(_react3.default.Component));
+
+exports.default = App;
+
+
+var styles = _reactNative.StyleSheet.create({
+  bubbleCitySpecial: {
+    position: 'absolute',
+    top: 100,
+    left: 120,
+    width: 120,
+    height: 120,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  bubbleSurpriseMe: {
+    position: 'absolute',
+    top: 200,
+    left: 30,
+    width: 100,
+    height: 100,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  bubbleLatest: {
+    position: 'absolute',
+    top: 220,
+    left: 220,
+    width: 120,
+    height: 120,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  bubbleDrinks: {
+    position: 'absolute',
+    top: 320,
+    left: 100,
+    width: 120,
+    height: 120,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  bubbleBeverages: {
+    position: 'absolute',
+    top: 440,
+    left: 20,
+    width: 110,
+    height: 110,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  bubblePocketFriendly: {
+    position: 'absolute',
+    top: 450,
+    left: 210,
+    width: 120,
+    height: 120,
+
+    backgroundColor: '#fff',
+
+    borderRadius: 64,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 5
+  },
+  image: {
+    height: 60,
+    width: 60,
+    borderRadius: 64
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  backgroundImage: {
+    flex: 1,
+    width: undefined,
+    height: undefined,
+    backgroundColor: 'transparent'
+
+  },
+  textInputContainer: {
+    backgroundColor: '#fff',
+
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+});
